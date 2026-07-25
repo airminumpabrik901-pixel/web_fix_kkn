@@ -1,0 +1,8 @@
+# Memblokir semua akses langsung ke file di folder ini
+<FilesMatch "\.(sqlite|json|php)$">
+    Order deny,allow
+    Deny from all
+</FilesMatch>
+
+# Secara umum tolak akses ke folder ini
+Deny from all
